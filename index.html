@@ -25,15 +25,18 @@
                 <div id="more">    
             
                 <div id="MoreMenu">
+                  <span id="PersonalExpenses">Personal <br>Expenses</span>
                   <li><i class="fa-solid fa-person-chalkboard"></i></li>
+                  <span id="WorkExpenses">Work Expenses</span>
                   <li><i class="fa-regular fa-person-walking-luggage"></i></li>
+                  <span id="BusinessExpenses">Business <br> Expenses</span>
                   <li><i class="fa-solid fa-briefcase"></i></li>
                 </div>
               </div> 
             </span>
             </div>
 
-            <div>  <a href=""><i class="fa-solid fa-file-spreadsheet"></i></a></div>
+            <div>  <a href=""><i class="fa-solid fa-clipboard-list"></i></a></div>
             <div><a href="">Profile</a></div>
           </nav>
 
@@ -62,28 +65,27 @@
     <div class="VehicleInformation" >  
       <!-- <h3>Vehicle Information</h3> -->
                <!-- Form -->
-      <form action="" method="post">
+      <form action="" method="get" id="formVal">
         <fieldset id="VehicleInformation">
           <legend>Vehicle Information</legend>
           <br>
           <label for="">VIN</label>
-          <input type="number" id="" name="" autofocus>
+          <input type="number" id="" name="" autofocus required>
           <br>
           <label for="">Make</label>
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" required>
           <br>
           <label for="">Model</label>
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" required>
           <br> 
           <label for="">Year</label>
-          <input type="number" name="" id="">
+          <input type="number" name="" id=""required>
           <br>
           <label for="">Insurance Policy Details</label>
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" >
           <br>
-          
-          <input type="button" value="Submit">
-          <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark" ></i>
+          <input type="submit" value="Submit" form="formVal" >
+          <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark"></i>
           <i class="fa-solid fa-circle-plus" id="fa-circle-plus"></i>
         </fieldset>
       </form>
@@ -91,17 +93,17 @@
   
 
         <!-- Maintenance And Repairs  -->
-    <div class="MaintenanceAndRepairRecords">
+    <div class="MaintenanceAndRepairRecords" >
       <!-- <h3>Maintenance And Repairs</h3> -->
         <!-- Form -->
-      <form action="" method="post">
+      <form action="" method="get" id="formVal" name="test" onsubmit="return validateForm()">
         <fieldset id="MaintenanceAndRepairRecords">
         <legend>Maintenance And Repairs</legend>
         <label for="">Date</label>
-      <input type="date" name="" value="" autofocus>
+      <input type="date" name="date" value="" autofocus>
           <br>
       <label for="number">Mileage</label>
-      <input type="" name="" value="">
+      <input type="" name="Mileage" value="">
           <br>
       <label for="">Change/Replace</label>
       <input type="text" name="" value="">
@@ -125,7 +127,7 @@
       <textarea name="" id=""></textarea>
       <br>
       
-      <input type="button" value="Submit">
+      <input type="submit" value="Submit" id="formVal" >
       <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark1"></i>
       <i class="fa-solid fa-circle-plus" id="fa-circle-plus1"></i>
     </fieldset>
