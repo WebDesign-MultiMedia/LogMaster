@@ -1,3 +1,29 @@
+///////////////////////////NAR BAR
+const faBars = document.getElementById('fa-folder-check');
+const faArrowUp = document.getElementById('fa-folder-minus')
+
+faBars.addEventListener('click', ()=>{
+        const MoreMenu =  document.getElementById('MoreMenu');
+        const faArrowUp = document.getElementById('fa-folder-minus');
+        const backgrn = document.getElementById('backgrn');
+        faBars.style.display = 'none';
+        MoreMenu.style.display = 'block';
+        faArrowUp.style.display = 'block';
+        backgrn.style.display = 'block';
+        setTimeout(() => {
+            MoreMenu.style.display = 'none';
+            faArrowUp.style.display = 'none';
+            faBars.style.display = 'block';
+            backgrn.style.display = 'none';
+
+        }, 5000);
+
+});
+
+
+
+
+
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
   daysContainer = document.querySelector(".days"),

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@descope/web-js-sdk": "^1.16.5"
+  }
+}
