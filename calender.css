@@ -70,7 +70,27 @@
 
 }
 
+#PersonalExpenses{
+  color: white;
+  position: relative;
+  left: -110px;
+  top: 7.5em;
+}
 
+#BusinessExpenses{
+  color: white;
+  position: relative;
+  float: right;
+  right: 10px;
+  bottom: 90px;
+}
+
+#WorkExpenses{
+  color: #ffffff;
+  position: relative;
+  bottom: 70px;
+  left: 4%;
+}  
 
 .fa-person-chalkboard{
     color: #ffffff;
@@ -486,7 +506,7 @@
   }
   .add-event2 {
     position: absolute;
-    bottom: 30px;
+    bottom: 110px;
     right: 30px;
     width: 40px;
     height: 40px;
