@@ -110,7 +110,6 @@ document.getElementById('VehicleManRep').addEventListener('click', () => {
      VehicleInfo1.style.backgroundColor = 'red'; 
      VehicleInfo1.style.zIndex = '5'; 
 
-     VehicleInfo1.style.backgroundColor = 'yellow'; 
      VehicleInfo1.style.borderRadius = '5%';
      VehicleInfo1.style.border = '1px solid black';
      VehicleInfo1.style.marginBottom = '1em';

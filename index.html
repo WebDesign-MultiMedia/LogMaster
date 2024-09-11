@@ -96,26 +96,73 @@
     <div class="MaintenanceAndRepairRecords" >
       <!-- <h3>Maintenance And Repairs</h3> -->
         <!-- Form -->
-      <form action="" method="get" id="formVal" name="test" onsubmit="return validateForm()">
+      <form action="" method="get" id="formVal" name="test">
         <fieldset id="MaintenanceAndRepairRecords">
         <legend>Maintenance And Repairs</legend>
         <label for="">Date</label>
-      <input type="date" name="date" value="" autofocus>
+      <input type="date" name="date" value="" autofocus required>
           <br>
       <label for="number">Mileage</label>
-      <input type="" name="Mileage" value="">
+      <input type="" name="Mileage" value="" required>
           <br>
       <label for="">Change/Replace</label>
-      <input type="text" name="" value="">
+      <select name="" id=""> 
+        <option value="">Break Pads</option>
+        <option value="">Rotors</option>
+        <option value="">Engine Oil, Filter</option>
+        <option value="">Transmission Fluid</option>
+        <option value="">Coolant Flush</option>
+        <option value="">Battery Checked</option>
+        <option value="">Windshiled Wiper</option>
+        <option value="">Headlights</option>
+        <option value="">Headlights Bulb</option>
+        <option value="">Taillights</option>
+        <option value="">Taillights Bulb</option>
+        <option value="">Tire Rotation</option>
+        <option value="">Alignment</option>
+        <option value="">Air Filter</option>
+        <option value="">Cabin Air Filter</option>
+        <option value=""></option>
+        <option value="">Timing Belt/Chain</option>
+        <option value="">Water Pump</option>
+        <option value="">Shocks</option>
+        <option value="">Struts</option>
+        <option value="">Control Arms</option>
+        <option value="">Muffler</option>
+        <option value="">Catalyic Converters</option>
+        <option value="">Pipes</option>
+        <option value="">Calipers</option>
+        <option value="">Brake Lines</option>
+        <option value="">Master Cylinder</option>
+        <option value="">Steering Rack/Power Steering</option>
+        <option value="">Fuel Injections</option>
+        <option value="">Fuel Pumps</option>
+        <option value="">Filters</option>
+        <option value="">AC Compressor</option>
+        <option value="">Heater Core</option>
+        <option value="">Engine Mount</option>
+        <option value="">Alternator</option>
+        <option value="">Starter</option>
+      </select>
+      <input type="text" name="" value="" required>
           <br>
       <label for="">Vehicle Location</label>
-      <input type="text" name="" value="">
+          <select name="VehicleLocation" id="VehicleLocation" required>
+            <option value="">Choose...</option>        
+            <option value="">Engine</option>
+            <option value="">Transmission</option>
+            <option value="">Front Driver</option>
+            <option value="">Front Passenger</option>
+            <option value="">Rear Driver</option>
+            <option value="">Rear Passenger</option>
+    
+          </select>
           <br>
       <label for="">Service Provider</label>
-      <input type="text" name="" value="">
+      <input type="text" name="" value="" required>
           <br>
       <label for="">Cost of Service</label>
-      <input type="number" name="" value="$" placeholder="$">
+      <input type="number" name="" value="$" placeholder="$" required>
           <br>
       <label for="">Next Service Due</label>
       <input type="month" name="" value="" >
