@@ -80,18 +80,16 @@
 }
 
 
-
+        /*  NEAR ME ICONS */
 .fa-gas-pump{
-    color: #ffffff;
+    color: lightcoral;
     position: absolute;
     left: 0;
     top: 70%;
     padding-left: 1em;
     font-size: 3em;
 }
-.fa-person-chalkboard:hover{
-    color: aquamarine;
-}
+
 
 #PersonalExpenses{
     color: white;
@@ -101,32 +99,28 @@
 }
 
 
-.fa-briefcase{
-    color: #ffffff;
+.fa-tire-flat{
+    color: lightslategrey;
+
     position: absolute;
     right: 0;
     top: 70%;
     padding-right: 1em;
     z-index: 9;
     font-size: 3em;
-    /* filter: drop-shadow(-5px 5px 10px white); */
+    /* filter: drop-shadow(-5px 5px 25px red); */
     
 }
-
-.fa-briefcase:hover{
-    color: aqua;
-}
-
 #BusinessExpenses{
     color: white;
     position: relative;
     float: right;
-    right: 10px;
+    right: 20px;
     bottom: 90px;
 }
 
- .fa-person-walking-luggage{
-            color: #ffffff;
+ .fa-screwdriver-wrench{
+            color: lightsalmon;
             font-size: 3em;
             position: absolute;
             top: 90px;
@@ -138,7 +132,18 @@
         position: relative;
         bottom: 70px;
         left: 4%;
-    }    
+    }   
+        /* HOVERS !!! */
+.fa-tire-flat:hover{
+    color: darkgray;
+}
+.fa-screwdriver-wrench:hover{
+    color: darkgray;
+}
+.fa-gas-pump:hover{
+    color: darkgray;
+}
+ 
 #backgrn{
     background-color: rgba(0, 0, 0, 0.705);
     width: 100%;
