@@ -115,8 +115,10 @@ document.getElementById('VehicleManRep').addEventListener('click', () => {
      VehicleInfo1.style.marginBottom = '1em';
 
      VehicleInfo1.style.width = '75%';
-     VehicleInfo1.style.left = '50px';
  
+
+
+
  });
 
          // DELETE
@@ -165,7 +167,6 @@ document.getElementById('VehicleFuelLog').addEventListener('click', () => {
      VehicleInfo2.style.border = '1px solid black';
      VehicleInfo2.style.marginBottom = '1em';
      VehicleInfo2.style.width = '75%';
-     VehicleInfo2.style.left = '50px';
  
  });
 
@@ -214,7 +215,6 @@ document.getElementById('VehicleResg').addEventListener('click', () => {
      VehicleInfo3.style.marginBottom = '1em';
 
      VehicleInfo3.style.width = '75%';
-     VehicleInfo3.style.left = '50px';
  
  });
 
@@ -265,7 +265,6 @@ addVinfo4.addEventListener('click', ()=>{
     VehicleInfo4.style.marginBottom = '1em';
 
     VehicleInfo4.style.width = '75%';
-    VehicleInfo4.style.left = '50px';
 
     
 
@@ -314,7 +313,6 @@ addVinfo5.addEventListener('click', ()=>{
     VehicleInfo5.style.marginBottom = '1em';
 
     VehicleInfo5.style.width = '75%';
-    VehicleInfo5.style.left = '50px';
 
 
 });
