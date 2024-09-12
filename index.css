@@ -98,18 +98,15 @@
     top: 7.5em;
 }
 
-
+ 
 .fa-tire-flat{
-    color: lightslategrey;
-
+    color: #ffffff;
     position: absolute;
     right: 0;
     top: 70%;
-    padding-right: 1em;
     z-index: 9;
     font-size: 3em;
-    /* filter: drop-shadow(-5px 5px 25px red); */
-    
+    /* filter: drop-shadow(-5px 5px 10px white); */
 }
 #BusinessExpenses{
     color: white;
