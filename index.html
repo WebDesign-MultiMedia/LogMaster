@@ -341,7 +341,24 @@
 
               
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="index.js">
+  
+</script>
 <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
+<script>
+  function findGasStations() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var url = `https://www.google.com/maps/search/gas+stations/@${latitude},${longitude},14z`;
+            window.open(url, '_blank');
+        });
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+</script>
+
 </body>
 </html>
