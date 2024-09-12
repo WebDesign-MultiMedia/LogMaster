@@ -1,7 +1,7 @@
 
 
 
-///////////////////////////////////////////////////
+///////////////////////// NAV
 const faBars = document.getElementById('fa-folder-check');
 const faArrowUp = document.getElementById('fa-folder-minus')
 
@@ -23,7 +23,22 @@ faBars.addEventListener('click', ()=>{
 
 })
 
+function findGasStations() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var url = `https://www.google.com/maps/search/gas+stations/@${latitude},${longitude},14z`;
+            window.open(url, '_blank');
+        });
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
 
+
+
+/////////////////////// MIDDLE BODY
 
 document.getElementById('VehicleInfo').addEventListener('click', () => {
     const field = document.getElementById('VehicleInformation');
