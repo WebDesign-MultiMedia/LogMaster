@@ -23,47 +23,6 @@ faBars.addEventListener('click', ()=>{
 
 })
 
-
-// ////////////////////////////// NEAR
-// function findGasStations() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(function (position) {
-//             var latitude = position.coords.latitude;
-//             var longitude = position.coords.longitude;
-//             var url = `https://www.google.com/maps/search/gas+stations/@${latitude},${longitude},14z`;
-//             window.open(url, '_blank');
-//         });
-//     } else {
-//         alert("Geolocation is not supported by this browser.");
-//     }
-// }
-
-// function findMechanicShops() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(function (position) {
-//             var latitude = position.coords.latitude;
-//             var longitude = position.coords.longitude;
-//             var url = `https://www.google.com/maps/search/mechanic+shops/@${latitude},${longitude},14z`;
-//             window.open(url, '_blank');
-//         });
-//     } else {
-//         alert("Geolocation is not supported by this browser.");
-//     }
-// }
-
-// function findFlatFixTireShops() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(function (position) {
-//             var latitude = position.coords.latitude;
-//             var longitude = position.coords.longitude;
-//             var url = `https://www.google.com/maps/search/flat+fix+tire+shops/@${latitude},${longitude},14z`;
-//             window.open(url, '_blank');
-//         });
-//     } else {
-//         alert("Geolocation is not supported by this browser.");
-//     }
-// }
-
 /////////////////////// MIDDLE BODY
 
 document.getElementById('VehicleInfo').addEventListener('click', () => {
