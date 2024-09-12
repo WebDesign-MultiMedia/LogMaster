@@ -31,26 +31,27 @@
         
     }
 
-     #menuOption .fa-folder-check{
-        position: absolute;
-        top: 12px;
-        z-index: 2;
-        font-size: 1.2em;
-        right: 43%;
-    }
-    .fa-bars:hover{
-        color: red;
-    }
-    
-    #menuOption .fa-folder-minus{
-        position: absolute;
-        top: 12px;
-        z-index: 2;
-        font-size: 1.2em;
-        right: 44%;
-        display: none;
-    }
+  
+.fa-folder-check{
+  position: absolute;
+  top: 12px;
+  z-index: 2;
+  font-size: 1.2em;
+left: 6.6vw;
+  color: orange;
+}
+.fa-bars:hover{
+  color: red;
+}
 
+.fa-folder-minus{
+  position: absolute;
+  top: 12px;
+  z-index: 2;
+  font-size: 1.2em;
+left: 6.6vw;
+  color: lightsalmon;
+}
 
     #MoreMenu{
         height: 270px;
@@ -68,7 +69,16 @@
         width: 80vw;
         list-style: none;
 
+}    /*  NEAR ME ICONS */
+.fa-gas-pump{
+  color: lightcoral;
+  position: absolute;
+  left: 10px;
+  top: 65%;
+  padding-left: 1em;
+  font-size: 2.3em;
 }
+
 
 #PersonalExpenses{
   color: white;
@@ -77,54 +87,47 @@
   top: 7.5em;
 }
 
+
+.fa-tire-flat{
+  position: relative;
+  left: 48%;
+  font-size: 2.7em;
+  top: -20px;
+  color: #878895;
+}
 #BusinessExpenses{
   color: white;
   position: relative;
   float: right;
-  right: 10px;
-  bottom: 90px;
+  right: 20px;
+  bottom: 75px;
 }
 
-#WorkExpenses{
-  color: #ffffff;
-  position: relative;
-  bottom: 70px;
-  left: 4%;
-}  
+.fa-screwdriver-wrench{
+          color: lightsalmon;
+          font-size: 2.5em;
+          position: absolute;
+          top: 70px;
+          left: 45%;
+      }
 
-.fa-person-chalkboard{
-    color: #ffffff;
-    position: absolute;
-    left: 0;
-    top: 70%;
-    padding-left: 1em;
-    font-size: 3em;
+  #WorkExpenses{
+      color: #ffffff;
+      position: relative;
+      bottom: 70px;
+      left: 4%;
+  }   
+        /* HOVERS !!! */
+.fa-tire-flat:hover{
+    color: darkgray;
 }
-.fa-person-chalkboard:hover{
-    color: aquamarine;
+.fa-screwdriver-wrench:hover{
+    color: darkgray;
 }
-.fa-briefcase{
-    color: #ffffff;
-    position: absolute;
-    right: 0;
-    top: 70%;
-    padding-right: 1em;
-    z-index: 9;
-    font-size: 3em;
-    /* filter: drop-shadow(-5px 5px 10px white); */
-    
+.fa-gas-pump:hover{
+    color: darkgray;
 }
-
-.fa-briefcase:hover{
-    color: aqua;
-}
- .fa-person-walking-luggage{
-            color: #ffffff;
-            font-size: 3em;
-            position: absolute;
-            top: 90px;
-            left: 45%;
-        }
+ 
 #backgrn{
     background-color: rgba(0, 0, 0, 0.705);
     width: 100%;

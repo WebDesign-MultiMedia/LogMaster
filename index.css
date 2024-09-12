@@ -3,6 +3,16 @@
 /* / `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
+    .error-message {
+        color: red;
+        font-weight: 200px;
+        font-size: 0.7em;
+        text-align: left;
+        position: absolute;
+        right: 70px;
+        padding-top: 16px;
+    }
+
     body{
         background-color: #373c4f;
     }
@@ -40,24 +50,25 @@
         
     }
 
-     #menuOption .fa-folder-check{
+.fa-folder-check{
         position: absolute;
         top: 12px;
         z-index: 2;
         font-size: 1.2em;
-        right: 40%;
+    left: 6.6vw;
+        color: orange;
     }
     .fa-bars:hover{
         color: red;
     }
     
-    #menuOption .fa-folder-minus{
+    .fa-folder-minus{
         position: absolute;
         top: 12px;
         z-index: 2;
         font-size: 1.2em;
-        right: 44%;
-        display: none;
+    left: 6.6vw;
+        color: lightsalmon;
     }
 
 
@@ -87,7 +98,7 @@
     left: 0;
     top: 70%;
     padding-left: 1em;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 
@@ -102,8 +113,9 @@
  .fa-tire-flat{
   position: relative;
   right: -150;
-  font-size: 3.3em;
+  font-size: 2.5em;
   top: -20px;
+  color: rgb(206, 206, 206);
 }
 #BusinessExpenses{
     color: white;
@@ -115,7 +127,7 @@
 
  .fa-screwdriver-wrench{
             color: lightsalmon;
-            font-size: 3em;
+            font-size: 2.5em;
             position: absolute;
             top: 90px;
             left: 45%;
@@ -172,7 +184,13 @@
             top: 12px;
         }
 
-       
+        .fa-chart-simple
+       {
+        position: relative;
+        font-size: 1.7em;
+        top: 12px;
+        color: white;
+       }
 
      
 

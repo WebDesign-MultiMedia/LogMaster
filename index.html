@@ -26,13 +26,13 @@
           <div id="more">    
       
           <div id="MoreMenu">
-            <span id="PersonalExpenses">Gas <br>Near Me</span>
+            <span id="PersonalExpenses">Gas Station <br>Near Me</span>
             <li><a href="https://www.google.com/maps/search/gas+stations+near+me" target="_blank"><i class="fa-solid fa-gas-pump"></i></a></li>
             
             <span id="WorkExpenses">Mechanic Near Me</span>
             <li><a href="https://www.google.com/maps/search/mechanic+shops/" target="_blank"> <i class="fa-sharp fa-light fa-screwdriver-wrench" ></i></a></li>
             
-            <span id="BusinessExpenses">Fix-Flats <br> Near Me</span>
+            <span id="BusinessExpenses">Flat-Fix <br> Near Me</span>
             <li><a href="https://www.google.com/maps/search/tire+shops/" target="_blank"><i class="fa-duotone fa-solid fa-tire-flat"></i></a></li>
           </div>
         </div> 
@@ -40,7 +40,7 @@
       </div>
 
       <div>  <a href="expensesLogPage.html"><i class="fa-duotone fa-solid fa-wallet"></i></a></div>
-      <div><a href="">Profile</a></div>
+      <div><a href="charts.html"><i class="fa-sharp fa-solid fa-chart-simple"></i></a></div>
     </nav>
 
     
@@ -66,28 +66,32 @@
     <div class="VehicleInformation" >  
       <!-- <h3>Vehicle Information</h3> -->
                <!-- Form -->
-      <form action="" method="get" id="formVal">
+      <form action="" method="get" id="formVal1">
         <fieldset id="VehicleInformation">
           <legend>Vehicle Information</legend>
           <br>
           <label for="">VIN</label>
-          <input type="number" id="" name="" autofocus required>
+          <input type="number" id="VIN" name="VIN" autofocus required>
+          <span class="error-message" id="nameError"></span>
           <br>
           <label for="">Make</label>
-          <input type="text" name="" id="" required>
+          <input type="text" name="MAKE" id="MAKE" required>
+          <span class="error-message" id="makeError"></span>
           <br>
           <label for="">Model</label>
-          <input type="text" name="" id="" required>
+          <input type="text" name="MODEL" id="MODEL"  required>
+          <span class="error-message" id="modelError"></span>
           <br> 
           <label for="">Year</label>
-          <input type="number" name="" id=""required>
+          <input type="number" name="YEAR" id="YEAR" required>
+          <span class="error-message" id="yearError"></span>
           <br>
           <label for="">Insurance Policy Details</label>
           <input type="text" name="" id="" >
+          <span class="error-message" id="nameError"></span>
           <br>
-          <input type="submit" value="Submit" form="formVal" >
-          <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark"></i>
-          <i class="fa-solid fa-circle-plus" id="fa-circle-plus"></i>
+          <button type="submit" form="formVal1">Submit</button>
+          <!-- <input type="submit" value="Submit" form="formVal1" > -->
         </fieldset>
       </form>
     </div>
@@ -97,17 +101,20 @@
     <div class="MaintenanceAndRepairRecords" >
       <!-- <h3>Maintenance And Repairs</h3> -->
         <!-- Form -->
-      <form action="" method="get" id="formVal" name="test">
+      <form action="" method="get" id="MaintenanceAndRepairRecordsform" name="MaintenanceAndRepairRecordsform">
         <fieldset id="MaintenanceAndRepairRecords">
         <legend>Maintenance And Repairs</legend>
+        <br>
         <label for="">Date</label>
       <input type="date" name="date" value="" autofocus required>
-          <br>
+
+      <br>
       <label for="number">Mileage</label>
       <input type="" name="Mileage" value="" required>
+
           <br>
       <label for="">Change/Replace</label>
-      <select name="" id=""> 
+      <select name="" id="" required> 
         <option value="">Break Pads</option>
         <option value="">Rotors</option>
         <option value="">Engine Oil, Filter</option>
@@ -145,10 +152,10 @@
         <option value="">Alternator</option>
         <option value="">Starter</option>
       </select>
-      <input type="text" name="" value="" required>
+
           <br>
       <label for="">Vehicle Location</label>
-          <select name="VehicleLocation" id="VehicleLocation" required>
+          <select name="VehicleLocation" id="VehicleLocation" aria-placeholder="hi" required>
             <option value="">Choose...</option>        
             <option value="">Engine</option>
             <option value="">Transmission</option>
@@ -158,6 +165,7 @@
             <option value="">Rear Passenger</option>
     
           </select>
+
           <br>
       <label for="">Service Provider</label>
       <input type="text" name="" value="" required>
@@ -172,12 +180,10 @@
       <input type="text" name="" value="">
             <br>
       <label for="">Notes/Issues</label>
-      <textarea name="" id=""></textarea>
+      <textarea name="" id="" placeholder="Any updates or issue after Service"></textarea>
       <br>
       
-      <input type="submit" value="Submit" id="formVal" >
-      <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark1"></i>
-      <i class="fa-solid fa-circle-plus" id="fa-circle-plus1"></i>
+      <button type="submit" form="MaintenanceAndRepairRecordsform">Submit</button>
     </fieldset>
       </form>
          </div>
@@ -187,23 +193,24 @@
     <div class="FuelRecord">
       <!-- <h3>Fuel Record</h3> -->
         <!-- Form -->
-      <form action="" method="post">
+      <form action="" method="post" id="FuelRecordForm">
         <fieldset id="FuelRecord">
           <legend>Fuel Record</legend>
+          <br>
           <label for="">Date</label>
-          <input type="date" name="" value="" autofocus>
+          <input type="date" name="" value="" required autofocus>
             <br>
           <label for="">Gallon/Liter Purchased</label>
-          <input type="number" name="" value="">
+          <input type="number" name="" value="" required>
             <br>
           <label for="">Price Per Gallon/Liter</label>
-          <input type="" name="" value="$" placeholder="$">
+          <input type="" name="" value="$" placeholder="$" required>
             <br>
           <label for="">Total Cost</label>
-          <input type="" name="" value="$" placeholder="$">
+          <input type="" name="" value="$" placeholder="$" required>
             <br>
           <label for="">Fuel Type</label>
-          <select name="fuelType" id="fuelType">
+          <select name="fuelType" id="fuelType" required>
             <option value=""></option>
             <option value="Regular">Regular</option>
             <option value="Premium">Premium</option>
@@ -211,33 +218,30 @@
           </select>
             <br>
           <label for="">Gas Station Name</label>
-          <input type="" name="" value="">
+          <input type="" name="" value="" required>
             <br>
           <label for="">Gas Station Location</label>
-          <input type="" name="" value="">
+          <input type="" name="" value="" required>
             <br>  
           <label for="">Payment Method</label>
-          <select name="paymentMethod" id="paymentMethod">
+          <select name="paymentMethod" id="paymentMethod" required>
             <option value=""></option>
             <option value="CreditCard">Credit</option>
             <option value="DebitCard">Debit</option>
             <option value="Cash">Cash</option>
           </select>
-          <input type="" name="" value="">
             <br>
           <label for="">Odometer Reading</label>
-          <input type="" name="" value="">
+          <input type="" name="" value="" placeholder="Mileage now" required>
               <br>
           <label for="">Trip Purpose</label>
-          <input type="" name="" value="">
+          <input type="" name="" value="" placeholder="work/personal/others">
               <br>
           <label for="">Fuel Efficiency</label>
           <input type="" name="" value="" readonly>
           <br>
           
-          <input type="button" value="Submit">
-          <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark2"></i>
-          <i class="fa-solid fa-circle-plus" id="fa-circle-plus2"></i>
+          <button type="submit" form="FuelRecordForm">Submit</button>
         </fieldset>
       </form>
     </div>
@@ -246,22 +250,20 @@
               <!-- Vehicle Registration Records -->
       <div class="VehicleRegistration">
                 <!-- Form -->
-        <form>
+        <form id="VehicleRegistrationform">
           <fieldset id="VehicleRegistration">
             <legend>Vehicle Registration</legend>
             <label for="">Registration renewal date</label>
-            <input type="text">
+            <input type="date" required>
               <br>
             <label for="">Fees and Taxes Paid</label>
-            <input type="text">
+            <input type="text" placeholder="$">
             <br>
             <label for="">Copies of Registration Documents</label>
             <input type="text">
             <br>
             
-            <input type="button" value="Submit">
-            <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark3"></i>
-            <i class="fa-solid fa-circle-plus" id="fa-circle-plus3"></i>
+            <button type="submit" form="VehicleRegistrationform">Submit</button>
            </fieldset>
         </form>
       </div>
@@ -270,30 +272,28 @@
           <!-- Insurance Records -->
       <div class="InsuranceRecords">
                 <!-- Form -->
-        <form action="">
+        <form action="" id="InsuranceRecordsFrom">
           <fieldset id="InsuranceRecords">
             <legend>Insurance</legend>
 
             <label for="">Policy Number</label>
-            <input type="number">
+            <input type="number" required>
             <br>
             <label for="">Provider</label>
             <input type="text" value="" placeholder="Name">
             <br>
             <label for="">Coverage Details</label>
-            <input type="text">
+            <input type="text" required>
             <br>
             <label for="">Premium Payments</label>
-            <input type="date">
+            <input type="date" required>
             <input type="text" name="" value="$">
             <br>
             <label for="">Claim Records</label>
             <input type="text">
             <br>
             
-            <input type="button" value="Submit">
-            <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark4"></i>
-            <i class="fa-solid fa-circle-plus" id="fa-circle-plus4"></i>
+            <button type="submit" form="InsuranceRecordsFrom">Submit</button>
           </fieldset>
         </form>
       </div>
@@ -302,26 +302,24 @@
             <!-- Accident Records -->
       <div class="AccidentRecords">
                 <!-- Form -->
-        <form action="" method="post">
+        <form action="" method="post" id="AccidentRecordsForm">
           <fieldset id="AccidentRecords">
             <legend>Accident Records</legend>
 
             <label for="">Date</label>
-            <input type="date">
+            <input type="date" required>
             <br>
             <label for="">Repair Documents</label>
-            <input type="text">
+            <input type="text" required>
             <br>
             <label for="">Insurance Claims Filled</label>
-            <input type="text">
+            <input type="text" required>
             <br>  
             <label for="">Police Reports</label>
-            <input type="text">
+            <input type="text" required>
             <br>
             
-            <input type="button" value="Submit">
-            <i class="fa-solid fa-trash-can-xmark" id="fa-trash-can-xmark5"></i>
-            <i class="fa-solid fa-circle-plus" id="fa-circle-plus5"></i>
+            <button type="submit" form="AccidentRecordsForm">Submit</button>
           </fieldset>
         </form>
       </div>  

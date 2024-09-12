@@ -1,24 +1,32 @@
-///////////////////////////NAR BAR
+///////////////////////// NAV
 const faBars = document.getElementById('fa-folder-check');
-const faArrowUp = document.getElementById('fa-folder-minus')
+const faArrowUp = document.getElementById('fa-folder-minus');
+const MoreMenu = document.getElementById('MoreMenu');
+const backgrn = document.getElementById('backgrn');
 
-faBars.addEventListener('click', ()=>{
-        const MoreMenu =  document.getElementById('MoreMenu');
-        const faArrowUp = document.getElementById('fa-folder-minus');
-        const backgrn = document.getElementById('backgrn');
+// Initial state (assuming faBars starts visible and the rest hidden)
+faArrowUp.style.display = 'none';
+MoreMenu.style.display = 'none';
+backgrn.style.display = 'none';
+
+faBars.addEventListener('click', () => {
+    if (MoreMenu.style.display === 'none') {
+        // Show the menu and arrow
         faBars.style.display = 'none';
         MoreMenu.style.display = 'block';
         faArrowUp.style.display = 'block';
         backgrn.style.display = 'block';
-        setTimeout(() => {
-            MoreMenu.style.display = 'none';
-            faArrowUp.style.display = 'none';
-            faBars.style.display = 'block';
-            backgrn.style.display = 'none';
-
-        }, 5000);
-
+    }
 });
+
+faArrowUp.addEventListener('click', () => {
+    // Hide the menu and arrow, and show faBars
+    faBars.style.display = 'block';
+    MoreMenu.style.display = 'none';
+    faArrowUp.style.display = 'none';
+    backgrn.style.display = 'none';
+});
+
 
 
 
