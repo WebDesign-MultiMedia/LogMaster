@@ -27,11 +27,11 @@
       
           <div id="MoreMenu">
             <span id="PersonalExpenses">Gas <br>Near Me</span>
-            <li><i class="fa-solid fa-gas-pump" onclick="findGasStations()"></i></li>
-            <span id="WorkExpenses">Mechanic Near Me</span>
+            <li><a href="https://www.google.com/maps/search/gas+stations+near+me" target="_blank"><i class="fa-solid fa-gas-pump"></i></a></li>
+            <!-- <span id="WorkExpenses">Mechanic Near Me</span>
             <li><i class="fa-sharp fa-light fa-screwdriver-wrench" onclick="findMechanicShops()"></i></li>
             <span id="BusinessExpenses">Fix-Flats <br> Near Me</span>
-            <li><i class="fa-duotone fa-solid fa-tire-flat" onclick="findFlatFixTireShops()"></i></li>
+            <li><i class="fa-duotone fa-solid fa-tire-flat" onclick="findFlatFixTireShops()"></i></li> -->
           </div>
         </div> 
       </span>
@@ -345,20 +345,7 @@
   
 </script>
 <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
-<script>
-  function findGasStations() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            var url = `https://www.google.com/maps/search/gas+stations/@${latitude},${longitude},14z`;
-            window.open(url, '_blank');
-        });
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
-}
-</script>
+
 
 </body>
 </html>
